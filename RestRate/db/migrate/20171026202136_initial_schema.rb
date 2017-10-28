@@ -17,9 +17,9 @@ class InitialSchema < ActiveRecord::Migration[5.1]
   		t.integer :rating
   	end
 
-  	create_table :categories do |t|
-  		t.stirng :name
+  	create_table :buildings do |t|
+  		t.string :name
 
   	end
-  end	
+  end
 end
