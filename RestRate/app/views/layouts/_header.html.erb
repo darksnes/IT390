@@ -9,9 +9,14 @@
                 </button>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li class="active"><a href="index.html" title="icon-home">Contact us</a></li>
-                        <li><a href="contact.html" title="Contact us">About us</a></li>
-                        <li><a href="contact.html" title="Contact us">Contact us</a></li>
+                        
+                        <li>
+                            <%= link_to root_path do%>
+                            <i class="icon-home"></i>
+                            <% end %>
+                        </li>
+                        <li><%= link_to "About Us", about_us_path%></li>
+                        <li><%= link_to "Contact Us", contact_us_path%></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -23,10 +28,13 @@
             <div class="row">
                 <div class="span8">
                     <a class="brand" href="index.html"><span class="logo-text">RestRate</span></a>
-                    <span class="tag-line hidden-phone">Your tag line here</span>
+                    <span class="tag-line hidden-phone">Weeding out the smelly</span>
                 </div>
                 <div class="span4">
-                    <div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div><!--/phone-number-->
+                    <ul class="inline pull-right">
+                        <li><%= link_to "Sign In", new_user_session_path %></li>
+                        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+                    </ul>
                 </div>
             </div>
         </div>
