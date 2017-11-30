@@ -10,45 +10,36 @@
             <div id="adv-custom-pager"></div>
             <div class="clearfix">
               <div class="clearfix padding30">
-                
+                <h2 clas="prop-title pull-left margin0">  <%= @restroom.name %> </h2>
                 <span class="prop-price pull-right serif italic">****</span>
               </div>
               <div class="clearfix padding030 row-fluid">
                 <ul class="more-info pull-left span6">
-                  <li class="info-label clearfix"><span class="pull-left">Description:</span>
-                    <span class="qty pull-right">4</span></li>
-                  <li class="info-label clearfix"><span class="pull-left">Address:</span>
-                    <span class="qty pull-right">2</span></li>
-                  <li class="info-label clearfix"><span class="pull-left">City:</span>
-                    <span class="qty pull-right">Condo</span></li>
-                  <li class="info-label clearfix"><span class="pull-left">State:</span>
-                    <span class="qty pull-right">1,700 sqft</span></li>
+                  <li class="info-label clearfix"><span class="pull-left">Description: </span>
+                    <span class="qty pull-right"> <%= @restroom.description %></span></li>
+                  <li class="info-label clearfix"><span class="pull-left">Phone:</span>
+                    <span class="qty pull-right"> <%= @restroom.phone %></span></li>
+                  <li class="info-label clearfix"><span class="pull-left">Email:</span>
+                    <span class="qty pull-right">  <%= @restroom.email %> </span></li>
                 </ul>
                 <ul class="more-info pull-right span6">
-                  <li class="info-label clearfix"><span class="pull-left">Year:</span>
-                    <span class="qty pull-right">2010</span></li>
-                  <li class="info-label clearfix"><span class="pull-left">Listing
-                    type:</span>
-                    <span class="qty pull-right">For Sale</span></li>
-                  <li class="info-label clearfix"><span class="pull-left">Parking:</span>
-                    <span class="qty pull-right">Assigned</span></li>
-                  <li class="info-label clearfix"><span class="pull-left">Neighborhood:</span>
-                    <span class="qty pull-right">Oceanfront</span></li>
+                  <li class="info-label clearfix"><span class="pull-left">Building:</span>
+                    <span class="qty pull-right">  <%= @restroom.building.name %> </span></li>                 
+                  <li class="info-label clearfix"><span class="pull-left">Address:</span>
+                    <span class="qty pull-right">
+                       <%= @restroom.address1 %><br />
+                       <%= @restroom.address2 %><br />  
+                       <%= @restroom.city %><br />
+                       <%= @restroom.state %><br /> 
+                       <%= @restroom.zipcode %><br />                     
+                    </span>
+                  </li>
+
                 </ul>
               </div>
               <div class="clearfix padding30">
-                <h3>Property Description</h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                  fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                  fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-                  ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-                  egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-                  leo.</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                  fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-                  fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,</p>
+                <h3>Reviews</h3>
+                <p>No reviews yet!</p>
               </div>
             </div>
           </div>
